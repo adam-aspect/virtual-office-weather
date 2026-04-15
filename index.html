@@ -8,19 +8,32 @@
     html, body {
       margin: 0;
       background: #111;
-      height: 100%;
-      display: grid;
-      place-items: center;
+      min-height: 100%;
       font-family: system-ui, sans-serif;
+      color: #ddd;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 12px;
+      box-sizing: border-box;
     }
     img {
       max-width: 100vw;
-      max-height: 100vh;
+      max-height: calc(100vh - 48px);
       display: block;
+    }
+    .stamp {
+      font-size: 14px;
+      opacity: 0.85;
     }
   </style>
 </head>
 <body>
   <img src="./virtual-office-current.png" alt="Current virtual office weather image">
+  <div class="stamp">Last updated: 2026-04-15 16:15 PDT</div>
 </body>
 </html>
